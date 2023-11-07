@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='./css/formulario.css')}}">
+  <link rel="icon" type="image/png" href="../static/img/favicon-256x256.png" >
+  </head>
+  <header><div class="logo">
+    <img src="../static/img/logo_negro.png" alt="Logo Empresa">
+  </div>
+  <div class="admin-icon">
+    <img id="iconoAdmin" src="../static/img/icono_administrador.png" alt="Icono Administrador">
+  </div>
+</header>
+<body>
+  <div class="login-box">
+    <p>Inicio Sesión</p>
+    <form action="/login" method="POST">
+      <div class="user-box">
+        <input required="" name="correo" type="text">
+        <label>Correo</label>
+      </div>
+      <div class="user-box">
+        <input required="" name="admin_password" type="password">
+        <label>Contraseña</label>
+      </div>
+        <button class="submit" type="submit"><span>Iniciar</span></button>
+    </form>
+  </div>
+</body>
+</html>
+
+

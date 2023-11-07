@@ -1,0 +1,40 @@
+<header>
+    <div class="logo">
+      <img src="../static/img/logo_negro.png" alt="Logo Empresa">
+    </div>
+    <div class="admin-icon">
+      <img id="iconoAdmin" src="../static/img/icono_administrador.png" alt="Icono Administrador">
+    </div>
+  </header>
+<link rel="stylesheet" href="{{url_for('static', filename='./css/registro.css')}}">
+    <div class="registro">
+        <form class=form action="/registro" method="POST">
+<form class="form">
+    <p class="title">Registro </p>
+    <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+        <label>
+            <input class="input" type="text" placeholder="" name="nombre">
+            <span>Nombre</span>
+        </label>
+
+    </div>  
+            
+    <label>
+        <input class="input" type="email" placeholder="" name="correo">
+        <span>Correo</span>
+    </label> 
+    <label>
+        <input class="input" type="text" placeholder="" name="documento">
+        <span>Documento</span>
+    </label> 
+    <label>
+        <input class="input" type="password" placeholder="" name="admin_password">
+        <span>Password</span>
+    </label>
+    
+
+    <button class="submit" type="submit"><span>Submit</span></button>
+    </button>
+    <p class="signin">Already have an acount ? <a href="login.html">Signin</a> </p>
+</form>
